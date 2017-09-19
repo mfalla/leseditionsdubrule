@@ -6,10 +6,26 @@
     <meta name="author" content="Les Éditions du Brulé" />
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/lightslider.min.css" type="text/css" />
     <link rel="stylesheet" href="css/screenv2.css" type="text/css" media="screen, projection" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/lightslider.min.js"></script>
   </head>
 
   <body>
     {{ content }}
+
+    <script>
+      $('#lightSlider').lightSlider({
+        gallery: true,
+        item: 1,
+        loop: true,
+        slideMargin: 0,
+        thumbItem: 11,
+        controls: true
+      });
+    </script>
+
   </body>
 </html>
