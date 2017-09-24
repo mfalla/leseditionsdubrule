@@ -177,6 +177,24 @@ a:hover { text-decoration: underline; }
 
 .main-content hr { height: 2px; padding: 0; margin: 1rem 0; background-color: #eff0f1; border: 0; }
 
+#images-slideshow {
+  position: relative;
+}
+
+#download-image {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  padding: 0 5px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  z-index: 9999;
+}
+
+#download-image:hover {
+  opacity: 1;
+}
+
 .lSSlideWrapper {
   width: 100%;
   height: 100%;
