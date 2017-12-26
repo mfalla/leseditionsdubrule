@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<section class="page-header">
+  Les Éditions du Brûlé
+</section>
+
+<menu>
+  <section class="main-content">
+    <a href="/">Accueil</a>
+    <a href="/lancement-du-livre.html">Lancement du livre</a>
+    <span>Quoi de neuf ?</span>
+  </section>
+</menu>
+
+<section class="main-content news">
+
+  <div>
+    <span class="date">24 décembre 2017</span>
+    <h4>André Dorval raconte la vie pas banale de son ancêtre Daniel Barbarin</h4>
+    <a href="http://www.courrierdeportneuf.com/2017/12/andre-dorval-raconte-la-vie-pas-banale-de-son-ancetre-daniel-barbarin/" target="blank">http://www.courrierdeportneuf.com/2017/12/andre-dorval-raconte-la-vie-pas-banale-de-son-ancetre-daniel-barbarin/</a>
+  </div>
+
+  <hr>
+
+  <div>
+    <span class="date">23 décembre 2017</span>
+    <h4>Famille de Jeanne-Marie Rouchouse, épouse de Daniel Barbarin, vers 1855-60</h4>
+    <img src="assets/famille-rouchouse.jpg" />
+    <span class="legend">de gauche à droite: Joannès , Cécile, Delphine Fontvieille (mère), Jean Rouchouse, Barthélémy , Jeanne-Marie (Jeny), Marie et Jean-Baptiste</span>
+  </div>
+
+  <div class="site-footer">
+    Faites-nous parvenir vos questions ou vos commentaires à l'adresse courriel suivante <a id="mail" href="#">email</a>
+  </div>
+
+  <script type="text/javascript">
+    var $mail = document.getElementById('mail');
+    var userName = ['dorval','andre'].join('');
+    var domainName = ['hotmail','com'].join('.');
+    var url = [userName, domainName].join('@');
+    var subject = ['Subject','Les éditions du brulés: commentaire'].join('=');
+    $mail.href = [['mailto', url].join(':'), subject].join('?');
+    $mail.innerText = url;
+
+    $('#download-image').on('click', function(e) {
+      $('#download-image').attr('href', $('#lightSlider li.active a').attr('href'));
+    })
+  </script>
+</section>

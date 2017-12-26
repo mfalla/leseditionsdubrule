@@ -12,6 +12,25 @@ body {
 a { color: #1e6bb8; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+menu {
+  padding: 0;
+}
+menu a, menu span {
+  color: #159957;
+  line-height: 1.5;
+  padding: 10px;
+  border: 1px solid #159957;
+  border-radius: 4px;
+}
+menu .main-content {
+  text-align: center;
+}
+menu .main-content a:hover,
+menu .main-content span {
+  background-color: #159957;
+  color: #ffffff;
+}
+
 .page-header {
   color: #fff;
   text-align: center;
@@ -96,6 +115,11 @@ a:hover { text-decoration: underline; }
 
 .main-content p { margin-bottom: 1em; }
 
+.main-content .date {
+  display: block;
+  font-size: 14px;
+  color: #bbbbbb;
+}
 .main-content a.book {
   display: flex;
   align-items: center;
@@ -176,6 +200,28 @@ a:hover { text-decoration: underline; }
 }
 
 .main-content hr { height: 2px; padding: 0; margin: 1rem 0; background-color: #eff0f1; border: 0; }
+
+.main-content.news div {
+  padding-top: 10px;
+}
+.main-content.news h4 {
+  margin: 0;
+}
+.main-content.news a {
+  font-size: 75%;
+}
+
+.main-content.news a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+.main-content.news img {
+  margin-top: 10px;
+}
+.main-content.news .legend {
+  display: block;
+  font-size: 75%;
+}
 
 #images-slideshow {
   position: relative;
